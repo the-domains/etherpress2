@@ -1,6 +1,6 @@
 name: etherpress2
 favicon: null
-layout_spectrum: 0.8
+layout_spectrum: 0.052134057972580194
 cta:
   domain: null
   bucket: null
@@ -23,3 +23,4 @@ purpose:
   - name: awareness
     item: e142d5f7-19f8-431e-abe6-8f8924f5cc19
     url: null
+typography_spectrum: 0.521501858253032
