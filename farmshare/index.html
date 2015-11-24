@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>FarmShare - etherpress2</title><link href="../rss.xml" title="etherpress2" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.12.15"><meta name="the-grid-solution" content="85a08bbd-2adc-44d8-b8a2-32107495aad0"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>FarmShare - etherpress2</title><link href="../rss.xml" title="etherpress2" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.12.20"><meta name="the-grid-solution" content="9134584f-aac8-4e5f-a243-e5d0cab15a72"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -166,7 +166,6 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-weight: normal;
   position: relative;
   padding: 0;
   margin: 0;
@@ -203,8 +202,14 @@ a {
   color: inherit;
 }
 a.more {
-  margin-left: 1em;
   font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
+}
+span.final-word {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
 }
 a:link,
 a:visited {
@@ -284,7 +289,7 @@ h3 a {
 .cover_only_header:first-of-type {
   position: fixed;
 }
-.article-stack:first-of-type p:first-child:first-letter {
+.first-chapter p:first-child:first-letter {
   float: left;
   font-size: 1rem;
   line-height: .7rem;
@@ -386,19 +391,7 @@ button.loading > span,
 article[itemtype="alternate"] {
   opacity: .2;
 }
-</style><style type="text/css">html {font-family: 'Roboto';font-weight: 400;}
- .layout-system .stack .hero {font-family: 'Merriweather';font-weight: 700;}
- .layout-system .stack .title {font-family: 'Merriweather';}
- .layout-system .stack .subtitle {font-family: 'Merriweather';}
- .layout-system .stack .text {font-family: 'Roboto';}
- .layout-system .stack .title {font-weight: 700;}
- .layout-system .stack .subtitle {font-weight: 700;}
- a {font-family: 'Roboto';font-weight: 700;}
- .attribution {font-family: 'Roboto';font-weight: 400;text-transform: inherit;}
- .layout-system .stack .quote {font-family: 'Merriweather';font-weight: 700;font-style: italic;}
- .layout-system .stack .title {text-transform: inherit;}.layout-system .title a {
-  font: inherit;
-}</style><style id="page-css-solution">
+</style><style id="page-css-solution">
 @media (max-width: 480px)   {
 
 
@@ -407,7 +400,6 @@ article[itemtype="alternate"] {
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one{position: relative; display: block; width: 4.8rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one{position: relative; display: block; width: 4.8rem; height: 0.43rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 0.43rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -423,12 +415,11 @@ article[itemtype="alternate"] {
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2{position: relative; display: block; width: 4.8rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one{position: relative; display: block; width: 4.8rem; height: 15.64rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 3.9rem; width: 4.8rem; position: absolute; top: 0.43rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[39,78,126,176,222,267,312,356,401,438,485,524,568,615]}"; display: none;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one{position: relative; display: block; width: 4.8rem; height: 15.88rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
+#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 4.14rem; width: 4.8rem; position: absolute; top: 0.43rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
-#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.9rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
+#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 4.14rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph{font-size: 0.16rem; width: 3.36rem; position: absolute; top: 0.03rem; left: 0.72rem;background-color: rgba(0, 0, 0, 0);border-top: 0px solid rgba(0, 0, 0, 0);border-right: 0px solid rgba(0, 0, 0, 0);border-bottom: 0px solid rgba(0, 0, 0, 0);border-left: 0px solid rgba(0, 0, 0, 0);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph>p:nth-of-type(1){border-top: 0px none rgba(0, 0, 0, 0);border-right: 0px none rgba(0, 0, 0, 0);border-bottom: 0px none rgba(0, 0, 0, 0);border-left: 0px none rgba(0, 0, 0, 0);}
 
@@ -439,8 +430,7 @@ article[itemtype="alternate"] {
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 3.92rem; width: 4.8rem; position: absolute; top: 4.33rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[45,82,125,172,209,256,299,342,390,427,474,512,555,595,637]}"; display: none;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 3.92rem; width: 4.8rem; position: absolute; top: 4.569999999999999rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.92rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -452,8 +442,7 @@ article[itemtype="alternate"] {
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 4.64rem; width: 4.8rem; position: absolute; top: 8.25rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[40,87,133,181,226,272,312,350,402,445,490,538,586,629,669,709,749,796]}"; display: none;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 4.64rem; width: 4.8rem; position: absolute; top: 8.49rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 4.64rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -465,8 +454,7 @@ article[itemtype="alternate"] {
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 3.18rem; width: 4.8rem; position: absolute; top: 12.89rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[42,86,132,178,223,268,313,350,390,435,483]}"; display: none;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 3.18rem; width: 4.8rem; position: absolute; top: 13.129999999999999rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.18rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -482,8 +470,7 @@ article[itemtype="alternate"] {
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3{position: relative; display: block; width: 4.8rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one{position: relative; display: block; width: 4.8rem; height: 0.43rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.43rem; width: 4.8rem; position: absolute; top: 16.07rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.43rem; width: 4.8rem; position: absolute; top: 16.310000000000002rem; left: 0rem; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -501,7 +488,7 @@ html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one.layout { backgro
 html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one.layout { background-color: rgb(244, 242, 242); }
 html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one.layout { background-color: rgb(30, 20, 20); }
 
-#page-4a848e38-dc0f-426b-87eb-40cd2186387a{height: 16.5rem;} 
+#page-4a848e38-dc0f-426b-87eb-40cd2186387a{height: 16.740000000000002rem;} 
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
 br[class] { display: none}
@@ -524,7 +511,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one{position: relative; display: block; width: 7.2rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one{position: relative; display: block; width: 7.2rem; height: 0.55rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 0.55rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -542,7 +528,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2{position: relative; display: block; width: 7.2rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one{position: relative; display: block; width: 7.2rem; height: 11.44rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 2.97rem; width: 7.2rem; position: absolute; top: 0.55rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[66,78,143,213,281,352,420,488,551,615]}"; display: none;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.97rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -557,7 +542,6 @@ display: none;
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 2.75rem; width: 7.2rem; position: absolute; top: 3.5200000000000005rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[70,140,209,273,334,400,464,526,595,664]}"; display: none;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.75rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -570,7 +554,6 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 3.23rem; width: 7.2rem; position: absolute; top: 6.27rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[67,133,196,261,330,406,474,543,608,678,738,805]}"; display: none;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.23rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -583,7 +566,6 @@ display: none;
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 2.49rem; width: 7.2rem; position: absolute; top: 9.5rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[66,132,202,268,338,350,419,486]}"; display: none;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.49rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -600,7 +582,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3{position: relative; display: block; width: 7.2rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one{position: relative; display: block; width: 7.2rem; height: 0.55rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.55rem; width: 7.2rem; position: absolute; top: 11.99rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -641,7 +622,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one{position: relative; display: block; width: 9.6rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one{position: relative; display: block; width: 9.6rem; height: 0.67rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 0.67rem; width: 9.6rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -659,7 +639,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2{position: relative; display: block; width: 9.6rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one{position: relative; display: block; width: 9.6rem; height: 12.52rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 3.24rem; width: 9.6rem; position: absolute; top: 0.67rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[52,78,134,187,246,298,356,410,467,524,582]}"; display: none;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.24rem; width: 7.68rem; position: absolute; top: 0rem; left: 0.96rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -674,7 +653,6 @@ display: none;
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 3.26rem; width: 9.6rem; position: absolute; top: 3.91rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[57,114,172,224,273,323,379,437,488,551,608,664]}"; display: none;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.26rem; width: 7.68rem; position: absolute; top: 0rem; left: 0.96rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -687,7 +665,6 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 3.5rem; width: 9.6rem; position: absolute; top: 7.17rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[57,114,170,226,280,336,402,461,527,591,650,709,764]}"; display: none;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 3.5rem; width: 7.68rem; position: absolute; top: 0rem; left: 0.96rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -700,7 +677,6 @@ display: none;
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 2.52rem; width: 9.6rem; position: absolute; top: 10.67rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[56,114,174,235,296,350,409,468]}"; display: none;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.52rem; width: 7.68rem; position: absolute; top: 0rem; left: 0.96rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -717,7 +693,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3{position: relative; display: block; width: 9.6rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one{position: relative; display: block; width: 9.6rem; height: 0.67rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.67rem; width: 9.6rem; position: absolute; top: 13.19rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -758,7 +733,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one{position: relative; display: block; width: 14.4rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one{position: relative; display: block; width: 14.4rem; height: 0.91rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 0.91rem; width: 14.4rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -774,12 +748,11 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2{position: relative; display: block; width: 14.4rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one{position: relative; display: block; width: 14.4rem; height: 8.92rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 2.34rem; width: 14.4rem; position: absolute; top: 0.91rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[78,164,246,338,424,509,596]}"; display: none;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one{position: relative; display: block; width: 14.4rem; height: 9.16rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
+#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 2.58rem; width: 14.4rem; position: absolute; top: 0.91rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
-#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.34rem; width: 11.52rem; position: absolute; top: 0rem; left: 1.44rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
+#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.58rem; width: 11.52rem; position: absolute; top: 0rem; left: 1.44rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph{font-size: 0.16rem; width: 6.48rem; position: absolute; top: 0.09rem; left: 2.52rem;background-color: rgba(0, 0, 0, 0);border-top: 0px solid rgba(0, 0, 0, 0);border-right: 0px solid rgba(0, 0, 0, 0);border-bottom: 0px solid rgba(0, 0, 0, 0);border-left: 0px solid rgba(0, 0, 0, 0);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph>p:nth-of-type(1){border-top: 0px none rgba(0, 0, 0, 0);border-right: 0px none rgba(0, 0, 0, 0);border-bottom: 0px none rgba(0, 0, 0, 0);border-left: 0px none rgba(0, 0, 0, 0);}
 
@@ -790,8 +763,7 @@ display: none;
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 2.12rem; width: 14.4rem; position: absolute; top: 3.25rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[82,172,256,342,427,512,595]}"; display: none;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 2.12rem; width: 14.4rem; position: absolute; top: 3.49rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.12rem; width: 11.52rem; position: absolute; top: 0rem; left: 1.44rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -803,8 +775,7 @@ display: none;
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 2.6rem; width: 14.4rem; position: absolute; top: 5.37rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[87,177,261,350,439,538,629,709,796]}"; display: none;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 2.6rem; width: 14.4rem; position: absolute; top: 5.61rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 2.6rem; width: 11.52rem; position: absolute; top: 0rem; left: 1.44rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -816,8 +787,7 @@ display: none;
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 1.86rem; width: 14.4rem; position: absolute; top: 7.97rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[86,174,263,350,435]}"; display: none;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 1.86rem; width: 14.4rem; position: absolute; top: 8.209999999999999rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.16rem; height: 1.86rem; width: 11.52rem; position: absolute; top: 0rem; left: 1.44rem;background-color: rgb(255, 255, 255);line-height: 0.2400rem;}
@@ -833,8 +803,7 @@ display: none;
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3{position: relative; display: block; width: 14.4rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one{position: relative; display: block; width: 14.4rem; height: 0.91rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.91rem; width: 14.4rem; position: absolute; top: 9.83rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 0.91rem; width: 14.4rem; position: absolute; top: 10.07rem; left: 0rem; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -852,7 +821,7 @@ html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one.layout { backgr
 html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one.layout { background-color: rgb(244, 242, 242); }
 html #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one.layout { background-color: rgb(30, 20, 20); }
 
-#page-4a848e38-dc0f-426b-87eb-40cd2186387a{height: 10.74rem;} 
+#page-4a848e38-dc0f-426b-87eb-40cd2186387a{height: 10.98rem;} 
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
 br[class] { display: none}
@@ -875,7 +844,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one{position: relative; display: block; width: 17.99rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one{position: relative; display: block; width: 17.99rem; height: 1.13rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 1.13rem; width: 17.99rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -893,7 +861,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2{position: relative; display: block; width: 17.99rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one{position: relative; display: block; width: 17.99rem; height: 11.12rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 2.92rem; width: 17.99rem; position: absolute; top: 1.13rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[78,164,246,338,424,509,596]}"; display: none;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.2rem; height: 2.92rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.3000rem;}
@@ -908,7 +875,6 @@ display: none;
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 2.65rem; width: 17.99rem; position: absolute; top: 4.05rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[82,172,256,342,427,512,595]}"; display: none;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.2rem; height: 2.65rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.3000rem;}
@@ -921,7 +887,6 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 3.25rem; width: 17.99rem; position: absolute; top: 6.6899999999999995rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[87,177,261,350,439,535,629,709,785]}"; display: none;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.2rem; height: 3.25rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.3000rem;}
@@ -934,7 +899,6 @@ display: none;
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 2.32rem; width: 17.99rem; position: absolute; top: 9.940000000000001rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[86,174,263,350,435]}"; display: none;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.2rem; height: 2.32rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.3000rem;}
@@ -951,7 +915,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3{position: relative; display: block; width: 17.99rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one{position: relative; display: block; width: 17.99rem; height: 1.13rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 1.13rem; width: 17.99rem; position: absolute; top: 12.25rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -992,7 +955,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one{position: relative; display: block; width: 18rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one{position: relative; display: block; width: 18rem; height: 1.08rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(41, 35, 35);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav {text-align: center; height: 1.08rem; width: 18rem; position: absolute; top: 0rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav .group.textual .title a { letter-spacing: 0.16em; }
@@ -1010,7 +972,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2{position: relative; display: block; width: 18rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one{position: relative; display: block; width: 18rem; height: 6.68rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(30, 20, 20);}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 {height: 1.78rem; width: 18rem; position: absolute; top: 1.08rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84:before{content: "{\"$-g-textual-t-paragraph\":[78,202,320,433,551]}"; display: none;}
 #u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual#u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual{opacity: 1; z-index: 2; font-size: 0.15rem; height: 1.78rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.2200rem;}
@@ -1025,7 +986,6 @@ display: none;
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 {height: 1.57rem; width: 18rem; position: absolute; top: 2.8600000000000003rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{content: "{\"$-g-textual-t-paragraph\":[114,224,334,448,564]}"; display: none;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; z-index: 2; font-size: 0.15rem; height: 1.57rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.2200rem;}
@@ -1038,7 +998,6 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 {height: 1.79rem; width: 18rem; position: absolute; top: 4.43rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{content: "{\"$-g-textual-t-paragraph\":[114,233,350,474,599,709]}"; display: none;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual { line-height: 1.5; text-align: left; }
 
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; z-index: 2; font-size: 0.15rem; height: 1.79rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.2200rem;}
@@ -1051,7 +1010,6 @@ display: none;
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a.publisher:hover { background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(197, 43, 43); }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d {height: 1.56rem; width: 18rem; position: absolute; top: 6.21rem; left: 0rem;background-color: rgba(0, 0, 0, 0); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{content: "{\"$-g-textual-t-paragraph\":[114,230,350,468]}"; display: none;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual { line-height: 1.5; text-align: left; }
 
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; z-index: 2; font-size: 0.15rem; height: 1.56rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;background-color: rgb(255, 255, 255);line-height: 0.2200rem;}
@@ -1068,7 +1026,6 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3{position: relative; display: block; width: 18rem; left: 0rem; top: 0rem; margin-top: 0rem; margin-bottom: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one{position: relative; display: block; width: 18rem; height: 1.08rem; top: 0rem; left: 0rem; margin-top: 0rem; margin-bottom: 0rem;background-color: rgb(244, 242, 242);}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate {text-align: center; height: 1.08rem; width: 18rem; position: absolute; top: 7.76rem; left: 0rem; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{content: "{}"; display: none;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title { text-transform: uppercase; }
 
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate .group.textual .title a { letter-spacing: 0.16em; }
@@ -1100,7 +1057,7 @@ br.w1800{ display: block }
 display: none;
 }
  
-}</style></head><body><div class="layout-system startup mobile" id="page-4a848e38-dc0f-426b-87eb-40cd2186387a"><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title footer layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one"></div></section><article subject="panel" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_xsmall colors-style-no-group-bg text_width_full not_decorated group_align_none align_center flow_unreversed v_group_inset_none h_group_outset_none h_group_inset_xsmall group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_none inset_empty stack_align_center vertical collapsed panel stack type textual nav-stack w-headline w-title w-divider w-decoration w-short_headline w-short_title stack type" itemid="u-page-nav" itemtype="nav" diff_index="0" index="type" kind="stack" score="0.5" missed="1.5" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav"><div kind="group" index="textual" class="group textual group textual" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual-t-headline"><a class="text-decoration" href="../index.html" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual-t-headline-a">etherpress2</a></h1></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="39c313a9-2e92-40f3-9477-9e1965099a84" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-39c313a9-2e92-40f3-9477-9e1965099a84"><div kind="group" index="textual" class="group textual group textual" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph"><p>ConsenSys released <a href="https://docs.google.com/document/d/1jntZtiw0VQQ6ZctVyWsCcg-ZGvv6MCSvlFIIPG5GDSg/edit?usp=sharing">a white paper about <br class="w480"/>FarmShare</a>, a <br class="w960"/>decentralized <br class="w481"/>CSA platform<br class="w1800"/><br class="w1799"/><br class="w961"/><br class="w960"/><br class="w481"/><br class="w480"/></p><p>Agriculture is one of the few industries, which <br class="w480"/>are not <br class="w960"/>affected <br class="w481"/>significantly by the <br class="w1799"/><br class="w961"/>information <br class="w480"/>technology <br class="w960"/>proliferation. <br class="w1800"/>Community-s<br class="w481"/>upported <br class="w480"/>agriculture (CSA) is an <br class="w1799"/><br class="w961"/><br class="w960"/>alternative economic <br class="w480"/>model for the <br class="w481"/>distribution and <br class="w960"/>production of <br class="w480"/>locally <br class="w1800"/>grown produce, as <br class="w1799"/><br class="w961"/>it promotes a <br class="w481"/>new <br class="w960"/><br class="w480"/>form of collaborative labor ownership, local <br class="w480"/>oriented <br class="w960"/>economics <br class="w481"/>and <br class="w1799"/><br class="w961"/>communal <br class="w1800"/>land <br class="w480"/>ownership that relies on the <br class="w960"/>direct engagement <br class="w480"/>of <br class="w481"/>farmer and consumer. <br class="w1799"/><br class="w961"/>Today, CSA has <br class="w960"/><br class="w480"/>grown in various sizes and <br class="w1800"/><br class="w481"/>numbers and many <br class="w480"/>organizations <br class="w960"/>started using <br class="w1799"/><br class="w961"/>in their marketing <br class="w481"/><br class="w480"/>strategy.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="1f95c07c-d135-47c0-a756-2ad2e2fa0c67" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67"><div kind="group" index="textual" class="group textual group textual" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph"><p>In ConsenSys&#x2019; Farmshare white paper, you get <br class="w480"/>to know the <br class="w960"/>potential of <br class="w481"/>a community <br class="w1799"/><br class="w961"/><br class="w480"/>supported agriculture evolution <br class="w1800"/><br class="w960"/>model that <br class="w480"/>takes benefits <br class="w481"/>of a blockchain potential for a <br class="w1799"/><br class="w961"/><br class="w960"/><br class="w480"/>token-based equity shares, automated <br class="w481"/><br class="w480"/>governance and <br class="w1800"/><br class="w960"/>distributed consensus to foster <br class="w1799"/><br class="w961"/><br class="w480"/>better community <br class="w960"/><br class="w481"/>engagement while removing <br class="w480"/>few financial risks and <br class="w960"/>managerial <br class="w1800"/><br class="w481"/>burdens <br class="w1799"/><br class="w961"/><br class="w480"/>from the farmers who involve in CSA. <br class="w960"/>Basically, <br class="w480"/>Farmshare <br class="w481"/>allows new property forms, <br class="w1799"/><br class="w961"/><br class="w480"/>community <br class="w960"/>operation, <br class="w1800"/>self sufficient <br class="w481"/>economies <br class="w480"/>and community <br class="w960"/>operation to facilitate <br class="w1799"/><br class="w961"/><br class="w480"/>collaboration <br class="w481"/>between the shareholders <br class="w960"/>and <br class="w480"/>farmers, <br class="w1800"/>which has proved tough for CSA <br class="w1799"/><br class="w961"/><br class="w481"/><br class="w480"/>organization <br class="w960"/>depending on the traditional <br class="w480"/>model of communication and <br class="w960"/><br class="w481"/>planning.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="2985d1cb-9098-4e25-b06b-02f8e3df7996" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996"><div kind="group" index="textual" class="group textual group textual" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph"><p>Ethereum based Farmshare tokens are the <br class="w480"/>currency of this <br class="w960"/>CSA model <br class="w481"/>and help to buy the <br class="w1799"/><br class="w961"/><br class="w480"/>crops provided by the CSA. <br class="w1800"/><br class="w960"/>Farmers can use an <br class="w481"/><br class="w480"/>estimate of their crops they produce <br class="w960"/>before <br class="w1799"/><br class="w961"/>the <br class="w480"/>token sale and <br class="w481"/>shareholders can purchase the <br class="w960"/><br class="w480"/>shares <br class="w1800"/>to personalize their weekly <br class="w1799"/><br class="w961"/><br class="w481"/>deliveries <br class="w480"/>through <br class="w960"/>exchanging certain CSA products <br class="w480"/>shares. Exchanges <br class="w481"/>offer <br class="w960"/>the necessary <br class="w1800"/><br class="w1799"/><br class="w961"/><br class="w480"/>flexibility for shareholders to exit and enter into <br class="w960"/><br class="w480"/>the <br class="w481"/>Farmshare community mid-harvest, <br class="w1799"/><br class="w961"/>which <br class="w480"/>is the peer-to-p<br class="w960"/>eer network, <br class="w1800"/><br class="w481"/>so its value is <br class="w480"/>directly related to the active users <br class="w960"/>counts. <br class="w1799"/>It <br class="w961"/><br class="w480"/>also <br class="w481"/>incorporates the loT technology in form of <br class="w480"/>soil <br class="w960"/>quality <br class="w1800"/>sensors, <br class="w481"/>automated irrigation <br class="w1799"/><br class="w961"/><br class="w480"/>systems, and weather <br class="w960"/>monitoring devices <br class="w480"/>offering <br class="w481"/>the feedback mechanism for the <br class="w1800"/><br class="w1799"/><br class="w961"/><br class="w960"/><br class="w480"/>community members as well as <br class="w481"/>farmers to <br class="w480"/>make excellent <br class="w960"/>decisions about crop <br class="w1799"/>production <br class="w961"/><br class="w480"/>and land <br class="w481"/>management.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="4a956236-3bad-46d5-afbc-0f5fe8171d3d" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d"><div kind="group" index="textual" class="group textual group textual" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph"><p>Farmshare relies on radical models of the <br class="w480"/>economics and <br class="w960"/>community <br class="w481"/>organization, hence <br class="w1799"/><br class="w961"/><br class="w480"/>demanding an intuitive user <br class="w1800"/><br class="w960"/>interface to make <br class="w481"/><br class="w480"/>more abstract concepts easy to understand <br class="w1799"/><br class="w961"/><br class="w960"/>and <br class="w480"/>tangible. As the proof-o<br class="w481"/>f-concept, Farmshare <br class="w480"/>starts <br class="w1800"/>with <br class="w960"/>the small aquaponic systems <br class="w1799"/><br class="w961"/>with <br class="w481"/><br class="w480"/>the built in sensor as well <br class="w960"/>as automation to <br class="w480"/>make caring for fish and <br class="w481"/>plants easy.<br class="w1800"/><br class="w1799"/><br class="w961"/><br class="w960"/><br class="w481"/><br class="w480"/></p><p><a href="https://medium.com/@ConsenSys/farmshare-at-callicoon-ny-art-walk-this-saturday-12-8pm-3904b426d420">FarmShare will be at Callicoon Art Walk</a> <br class="w480"/>tomorrow, Saturday <br class="w960"/>Oct 10th, <br class="w481"/>from 12&#x2013;8pm the <br class="w1799"/><br class="w961"/><br class="w480"/>Weigh Station and Silos, 12 Main <br class="w1800"/><br class="w960"/>St, Callicoon, <br class="w480"/>NY <br class="w481"/>12723</p></div></div></article><article subject="panel" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_xsmall colors-style-no-group-bg text_width_full not_decorated group_align_none align_center flow_unreversed v_group_inset_none h_group_outset_none h_group_inset_xsmall group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_none inset_empty stack_align_center vertical collapsed panel stack type textual nav-stack w-headline w-title w-divider w-decoration w-short_headline w-short_title stack type" itemid="u-page-alternate" itemtype="alternate" diff_index="0" index="type" kind="stack" score="0.5" missed="1.5" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate"><div kind="group" index="textual" class="group textual group textual" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual-t-headline"><a class="text-decoration" href="../rss.xml" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual-t-headline-a">etherpress2</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title footer layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-headline w-title w-divider w-decoration w-short_headline w-short_title footer layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one"></div></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system startup mobile" id="page-4a848e38-dc0f-426b-87eb-40cd2186387a"><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title footer layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one"></div></section><article subject="panel" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_xsmall colors-style-no-group-bg text_width_full not_decorated group_align_none align_center flow_unreversed v_group_inset_none h_group_outset_none h_group_inset_xsmall group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_none inset_empty stack_align_center vertical collapsed panel stack type first-panel last-panel textual nav-stack w-headline w-title w-divider w-decoration w-short_headline w-short_title stack type" itemid="u-page-nav" itemtype="nav" diff_index="0" index="type" kind="stack" score="0.5" missed="1.5" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav"><div kind="group" index="textual" class="group textual group textual" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual-t-headline"><a class="text-decoration" href="../index.html" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-textual-t-headline-a">etherpress2</a></h1></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type first-chapter textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="39c313a9-2e92-40f3-9477-9e1965099a84" itemtype="text" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-39c313a9-2e92-40f3-9477-9e1965099a84"><div kind="group" index="textual" class="group textual group textual" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph"><p>ConsenSys released <a href="https://docs.google.com/document/d/1jntZtiw0VQQ6ZctVyWsCcg-ZGvv6MCSvlFIIPG5GDSg/edit?usp=sharing">a white paper about <br class="w480"/>FarmShare</a>, a <br class="w481 w960"/>decentralized CSA <br class="w480 w961"/>platform</p><p>Agriculture is one of the few industries, which <br class="w480"/>are not <br class="w960"/>affected <br class="w481"/>significantly by the <br class="w961 w1799"/>information <br class="w480"/>technology <br class="w960 w1800"/>proliferation. Community-s<br class="w481"/>upported <br class="w480"/>agriculture (CSA) is an <br class="w960 w961 w1799"/>alternative economic <br class="w480"/>model for the <br class="w481"/>distribution <br class="w1800"/>and <br class="w960"/>production of <br class="w480"/>locally grown produce, as <br class="w961 w1799"/>it promotes a <br class="w481"/>new <br class="w480 w960"/>form of collaborative labor ownership, local <br class="w480"/>oriented <br class="w960 w1800"/>economics <br class="w481"/>and <br class="w961 w1799"/>communal land <br class="w480"/>ownership that relies on the <br class="w960"/>direct engagement <br class="w480"/>of <br class="w481"/>farmer and consumer. <br class="w961 w1799"/>Today, CSA has <br class="w480 w960 w1800"/>grown in various sizes and <br class="w481"/>numbers and many <br class="w480"/>organizations <br class="w960"/>started using <br class="w961 w1799"/>in their marketing <br class="w480 w481"/>strategy.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="1f95c07c-d135-47c0-a756-2ad2e2fa0c67" itemtype="text" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67"><div kind="group" index="textual" class="group textual group textual" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph"><p>In ConsenSys&#x2019; Farmshare white paper, you get <br class="w480"/>to know the <br class="w960"/>potential of <br class="w481"/>a community <br class="w480 w961 w1799"/>supported agriculture evolution <br class="w960 w1800"/>model that <br class="w480"/>takes benefits <br class="w481"/>of a blockchain potential for a <br class="w480 w960 w961 w1799"/>token-based equity shares, automated <br class="w480 w481"/>governance and <br class="w960 w1800"/>distributed consensus to foster <br class="w480 w961 w1799"/>better community <br class="w481 w960"/>engagement while removing <br class="w480"/>few financial risks and <br class="w960"/>managerial <br class="w481 w1800"/>burdens <br class="w480 w961 w1799"/>from the farmers who involve in CSA. <br class="w960"/>Basically, <br class="w480"/>Farmshare <br class="w481"/>allows new property forms, <br class="w480 w961 w1799"/>community <br class="w960"/>operation, <br class="w1800"/>self sufficient <br class="w481"/>economies <br class="w480"/>and community <br class="w960"/>operation to facilitate <br class="w480 w961 w1799"/>collaboration <br class="w481"/>between the shareholders <br class="w960"/>and <br class="w480"/>farmers, <br class="w1800"/>which has proved tough for CSA <br class="w480 w481 w961 w1799"/>organization <br class="w960"/>depending on the traditional <br class="w480"/>model of communication and <br class="w481 w960"/>planning.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="2985d1cb-9098-4e25-b06b-02f8e3df7996" itemtype="text" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996"><div kind="group" index="textual" class="group textual group textual" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph"><p>Ethereum based Farmshare tokens are the <br class="w480"/>currency of this <br class="w960"/>CSA model <br class="w481"/>and help to buy the <br class="w480 w961 w1799"/>crops provided by the CSA. <br class="w960 w1800"/>Farmers can use an <br class="w480 w481"/>estimate of their crops they produce <br class="w960"/>before <br class="w961 w1799"/>the <br class="w480"/>token sale and <br class="w481"/>shareholders can purchase the <br class="w480 w960"/>shares <br class="w1800"/>to personalize their weekly <br class="w481 w961 w1799"/>deliveries <br class="w480"/>through <br class="w960"/>exchanging certain CSA products <br class="w480"/>shares. Exchanges <br class="w481"/>offer <br class="w960"/>the necessary <br class="w480 w961 w1799 w1800"/>flexibility for shareholders to exit and enter into <br class="w480 w960"/>the <br class="w481"/>Farmshare community mid-harvest, <br class="w961 w1799"/>which <br class="w480"/>is the peer-to-p<br class="w960"/>eer network, <br class="w481 w1800"/>so its value is <br class="w480"/>directly related to the active users <br class="w960"/>counts. <br class="w1799"/>It <br class="w480 w961"/>also <br class="w481"/>incorporates the loT technology in form of <br class="w480"/>soil <br class="w960"/>quality <br class="w1800"/>sensors, <br class="w481"/>automated irrigation <br class="w480 w961 w1799"/>systems, and weather <br class="w960"/>monitoring devices <br class="w480"/>offering <br class="w481"/>the feedback mechanism for the <br class="w480 w960 w961 w1799 w1800"/>community members as well as <br class="w481"/>farmers to <br class="w480"/>make excellent <br class="w960"/>decisions about crop <br class="w1799"/>production <br class="w480 w961"/>and land <br class="w481"/>management.</p></div></div></article><article subject="chapter" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_article colors-style-white text_width_wider not_decorated group_align_center align_left flow_unreversed v_group_inset_paragraph h_group_outset_none h_group_inset_large group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_medium inset_empty stack_align_stretch vertical collapsed chapter stack type last-chapter textual crop-true w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text stack type" itemid="4a956236-3bad-46d5-afbc-0f5fe8171d3d" itemtype="text" diff_index="3" index="type" kind="stack" score="1.5" missed="1.5" tag="article" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d"><div kind="group" index="textual" class="group textual group textual" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph"><p>Farmshare relies on radical models of the <br class="w480"/>economics and <br class="w960"/>community <br class="w481"/>organization, hence <br class="w480 w961 w1799"/>demanding an intuitive user <br class="w960 w1800"/>interface to make <br class="w480 w481"/>more abstract concepts easy to understand <br class="w960 w961 w1799"/>and <br class="w480"/>tangible. As the proof-o<br class="w481"/>f-concept, Farmshare <br class="w480"/>starts <br class="w1800"/>with <br class="w960"/>the small aquaponic systems <br class="w961 w1799"/>with <br class="w480 w481"/>the built in sensor as well <br class="w960"/>as automation to <br class="w480"/>make caring for fish and <br class="w481"/>plants easy.</p><p><a href="https://medium.com/@ConsenSys/farmshare-at-callicoon-ny-art-walk-this-saturday-12-8pm-3904b426d420">FarmShare will be at Callicoon Art Walk</a> tomorrow, Saturday <br class="w960"/>Oct 10th, <br class="w481"/>from 12&#x2013;8pm the <br class="w480 w961 w1799"/>Weigh Station and Silos, 12 Main <br class="w960 w1800"/>St, Callicoon, <br class="w480"/>NY <br class="w481"/>12723</p></div></div></article><article subject="panel" class="first export-linebreaks desktop_sizing uninverted full aspect_natural font_size_xsmall colors-style-no-group-bg text_width_full not_decorated group_align_none align_center flow_unreversed v_group_inset_none h_group_outset_none h_group_inset_xsmall group_inset_none flow_vertical stack_transparency_off v_inset_none h_inset_none inset_empty stack_align_center vertical collapsed panel stack type first-panel last-panel textual nav-stack w-headline w-title w-divider w-decoration w-short_headline w-short_title stack type" itemid="u-page-alternate" itemtype="alternate" diff_index="0" index="type" kind="stack" score="0.5" missed="1.5" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate"><div kind="group" index="textual" class="group textual group textual" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual-t-headline"><a class="text-decoration" href="../rss.xml" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-textual-t-headline-a">etherpress2</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" column="0" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title footer layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout w-divider w-decoration w-paragraph w-text w-long_paragraph w-long_text article layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="layout one first-layout last-layout w-headline w-title w-divider w-decoration w-short_headline w-short_title header layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one"></div></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Picturefill - v2.3.1 - 2015-04-09
 * http://scottjehl.github.io/picturefill
 * Copyright (c) 2015 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT */
@@ -1584,19 +1541,20 @@ if (file = (ref3 = (ref4 = location.search.match(/SPEC=([^&?]+)/)) != null ? ref
 
 },{"./loader":3,"./reporter":4,"./resizer":5,"./runner":6,"./shim":7,"./solver":8}],3:[function(require,module,exports){
 module.exports = function(callback) {
-  var protocol, query;
+  var protocol, query, url;
   query = document.querySelector('script[src*="clientside"]');
   if (location.protocol === 'file:') {
     protocol = 'http:';
   } else {
     protocol = '';
   }
+  url = protocol + "//cdn.rawgit.com/gss/document/exporter-29/dist/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
-      return module.exports.load(protocol + "//cdn.rawgit.com/gss/document/exporter-28/dist/gss.document.parser.js", callback);
+      return module.exports.load(url, callback);
     });
   } else {
-    return module.exports.load(protocol + "//cdn.rawgit.com/gss/document/exporter-28/dist/gss.document.parser.js", callback);
+    return module.exports.load(url, callback);
   }
 };
 
@@ -1894,6 +1852,21 @@ module.exports = function(GSS) {
       document.documentElement.classList.remove('wf-loading')
       document.documentElement.classList.add('wf-active')
       window.engine.triggerEvent("interactive")
+    } else {
+      document.documentElement.classList.remove('wf-loading')
+      document.documentElement.classList.add('wf-active')
     }
   }, 1000)
-},timeout: 25000,classes: false});</script></body></html>
+},timeout: 25000,classes: false});</script><style id="web-font-binder" type="text/css"> .wf-active html {font-family: 'Roboto';font-weight: 400;}
+ .wf-active  .layout-system .stack .hero {font-family: 'Merriweather';font-weight: 700;}
+ .wf-active  .layout-system .stack .title {font-family: 'Merriweather';}
+ .wf-active  .layout-system .stack .subtitle {font-family: 'Merriweather';}
+ .wf-active  .layout-system .stack .text {font-family: 'Roboto';}
+ .wf-active  .layout-system .stack .title {font-weight: 700;}
+ .wf-active  .layout-system .stack .subtitle {font-weight: 700;}
+ .wf-active  a {font-family: 'Roboto';font-weight: 700;}
+ .wf-active  .attribution {font-family: 'Roboto';font-weight: 400;text-transform: inherit;}
+ .wf-active  .layout-system .stack .quote {font-family: 'Merriweather';font-weight: 700;font-style: italic;}
+ .wf-active  .layout-system .stack .title {text-transform: inherit;}.layout-system .title a {
+  font: inherit;
+}</style></body></html>
