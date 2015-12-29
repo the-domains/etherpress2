@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>FarmShare - etherpress2</title><link href="../rss.xml" title="etherpress2 feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.14.8"><meta name="the-grid-solution" content="6b5e4156-5d71-4792-96af-9a0b823abff8"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>FarmShare - etherpress2</title><link href="../rss.xml" title="etherpress2 feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.14.19"><meta name="the-grid-solution" content="efc673bc-b810-4bf2-9708-d52d0e2d6977"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -158,18 +158,14 @@
 @media (min-width: 130.625em){html{font-size:7.3075em !important}}</style><style href="./css/reset.css" rel="stylesheet">*,
 *:before,
 *:after {
-  /*
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
-  */
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  position: relative;
   padding: 0;
   margin: 0;
 }
@@ -295,8 +291,7 @@ h3 a {
 .decoration.connector > svg {
   width: 106%;
   height: 106%;
-  margin-left: -2.5%;
-  margin-top: -1px;
+  margin-left: -2%;
 }
 .decoration path,
 .decoration ellipse,
@@ -352,8 +347,11 @@ h3 a {
 .group button:hover {
   opacity: .8;
 }
-.group .attribution {
-  overflow: hidden;
+.group .attribution:after {
+  display: block;
+  clear: both;
+  content: '';
+  height: 0px;
 }
 .group .attribution .publisher {
   display: inline-block;
@@ -413,9 +411,9 @@ h3 a {
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one{position: relative; display: block; width: 4.8rem; height: 0.34rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.16rem; line-height: 0.2rem; height: 0.34rem; width: 4.8rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 4.8rem; position: absolute; top: 0.09rem; left: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 1.97rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -443,16 +441,16 @@ h3 a {
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67{font-size: 0.16rem; line-height: 0.2rem; height: 6.02rem; width: 4.8rem; position: absolute; top: 7.1499999999999995rem; left: 0rem;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{}
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 >.group.textual { text-align: left; }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; font-size: 0.16rem; line-height: 0.24rem; height: 6.02rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 2.4rem; position: absolute; top: 0.12rem; left: 0.72rem;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 >.group.column { text-align: left; }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column{font-size: 0.16rem; line-height: 0.24rem; height: 6.02rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 2.4rem; position: absolute; top: 0.12rem; left: 0.72rem;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a { color: rgb(227, 149, 149); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a:hover { color: rgb(139, 132, 132); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a:active { color: rgb(255, 255, 255); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 { background-color: rgb(41, 35, 35); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996{font-size: 0.16rem; line-height: 0.2rem; height: 6.74rem; width: 4.8rem; position: absolute; top: 13.17rem; left: 0rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.textual { text-align: left; }
@@ -467,25 +465,25 @@ h3 a {
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d{font-size: 0.16rem; line-height: 0.2rem; height: 4.58rem; width: 4.8rem; position: absolute; top: 19.91rem; left: 0rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.textual { text-align: left; }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; font-size: 0.16rem; line-height: 0.24rem; height: 4.58rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 2.4rem; position: absolute; top: 0.12rem; left: 0.72rem;}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph>p:nth-of-type(2){margin-top: 0.24rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.column { text-align: left; }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column{font-size: 0.16rem; line-height: 0.24rem; height: 4.58rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 2.4rem; position: absolute; top: 0.12rem; left: 0.72rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph>p:nth-of-type(2){margin-top: 0.24rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a { color: rgb(227, 149, 149); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a:active { color: rgb(255, 255, 255); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d { background-color: rgb(41, 35, 35); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one { background-color: rgb(28, 24, 24); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3{position: relative;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one{position: relative; display: block; width: 4.8rem; height: 0.34rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.16rem; line-height: 0.2rem; height: 0.34rem; width: 4.8rem; position: absolute; top: 24.49rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 4.8rem; position: absolute; top: 0.09rem; left: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 1.79rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 3.84rem; position: absolute; top: 0rem; left: 0.48rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -494,18 +492,20 @@ h3 a {
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w480{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w480{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph {
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph {
 display: none;
 }
 }
@@ -516,9 +516,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one{position: relative; display: block; width: 7.2rem; height: 0.43rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.16rem; line-height: 0.2rem; height: 0.43rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 7.2rem; position: absolute; top: 0.13rem; left: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 3.11rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -546,16 +546,16 @@ display: none;
 #u-39c313a9-2e92-40f3-9477-9e1965099a84#u-39c313a9-2e92-40f3-9477-9e1965099a84 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67{font-size: 0.16rem; line-height: 0.2rem; height: 3.98rem; width: 7.2rem; position: absolute; top: 6.069999999999999rem; left: 0rem;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67:before{}
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 >.group.textual { text-align: left; }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual{opacity: 1; font-size: 0.16rem; line-height: 0.24rem; height: 3.98rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 3.6rem; position: absolute; top: 0.18rem; left: 1.08rem;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 >.group.column { text-align: left; }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column{font-size: 0.16rem; line-height: 0.24rem; height: 3.98rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 3.6rem; position: absolute; top: 0.18rem; left: 1.08rem;}
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a { color: rgb(227, 149, 149); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a:hover { color: rgb(139, 132, 132); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 a:active { color: rgb(255, 255, 255); }
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 { background-color: rgb(41, 35, 35); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996{font-size: 0.16rem; line-height: 0.2rem; height: 4.7rem; width: 7.2rem; position: absolute; top: 10.049999999999999rem; left: 0rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.textual { text-align: left; }
@@ -570,25 +570,25 @@ display: none;
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d{font-size: 0.16rem; line-height: 0.2rem; height: 3.26rem; width: 7.2rem; position: absolute; top: 14.75rem; left: 0rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.textual { text-align: left; }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual{opacity: 1; font-size: 0.16rem; line-height: 0.24rem; height: 3.26rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 3.6rem; position: absolute; top: 0.18rem; left: 1.08rem;}
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph>p:nth-of-type(2){margin-top: 0.24rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.column { text-align: left; }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column{font-size: 0.16rem; line-height: 0.24rem; height: 3.26rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph{font-size: 0.16rem; line-height: 0.24rem; width: 3.6rem; position: absolute; top: 0.18rem; left: 1.08rem;}
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph>p:nth-of-type(2){margin-top: 0.24rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a { color: rgb(227, 149, 149); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d a:active { color: rgb(255, 255, 255); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d { background-color: rgb(41, 35, 35); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one { background-color: rgb(28, 24, 24); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3{position: relative;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one{position: relative; display: block; width: 7.2rem; height: 0.43rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.16rem; line-height: 0.2rem; height: 0.43rem; width: 7.2rem; position: absolute; top: 18.009999999999998rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 7.2rem; position: absolute; top: 0.13rem; left: 0rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 2.91rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 5.76rem; position: absolute; top: 0rem; left: 0.72rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -597,18 +597,20 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w481{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w481{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph {
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph {
 display: none;
 }
 }
@@ -619,9 +621,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one{position: relative; display: block; width: 9.6rem; height: 0.51rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.16rem; line-height: 0.2rem; height: 0.51rem; width: 9.6rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 1.35rem; position: absolute; top: 0.17rem; left: 4.13rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 0.24rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 9.6rem; position: absolute; top: 0.17rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 9.12rem; position: absolute; top: 0rem; left: 0.24rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -689,9 +691,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one{position: relative; display: block; width: 9.6rem; height: 0.51rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.16rem; line-height: 0.2rem; height: 0.51rem; width: 9.6rem; position: absolute; top: 16.57rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 1.7rem; position: absolute; top: 0.17rem; left: 3.95rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 0.24rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 9.6rem; position: absolute; top: 0.17rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 9.12rem; position: absolute; top: 0rem; left: 0.24rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -700,8 +702,8 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w960{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w960{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3,
@@ -709,9 +711,11 @@ u.w960{ display: block }
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3,
  #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph {
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph {
 display: none;
 }
 }
@@ -722,9 +726,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one{position: relative; display: block; width: 14.4rem; height: 0.68rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.16rem; line-height: 0.2rem; height: 0.68rem; width: 14.4rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 1.7rem; position: absolute; top: 0.26rem; left: 6.35rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 0.36rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 14.4rem; position: absolute; top: 0.26rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 13.68rem; position: absolute; top: 0rem; left: 0.36rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -792,9 +796,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one{position: relative; display: block; width: 14.4rem; height: 0.68rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.16rem; line-height: 0.2rem; height: 0.68rem; width: 14.4rem; position: absolute; top: 14.65rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 2.1rem; position: absolute; top: 0.26rem; left: 6.15rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; position: absolute; top: 0rem; left: 0.36rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.13rem; line-height: 0.2rem; height: 0.17rem; width: 14.4rem; position: absolute; top: 0.26rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.13rem; line-height: 0.17rem; width: 13.68rem; position: absolute; top: 0rem; left: 0.36rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -803,8 +807,8 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w961{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w961{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3,
@@ -812,9 +816,11 @@ u.w961{ display: block }
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3,
  #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual,
  #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph {
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph {
 display: none;
 }
 }
@@ -825,9 +831,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one{position: relative; display: block; width: 17.99rem; height: 0.84rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.2rem; line-height: 0.25rem; height: 0.84rem; width: 17.99rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.16rem; line-height: 0.24rem; height: 0.21rem; width: 2.01rem; position: absolute; top: 0.32rem; left: 8rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.16rem; line-height: 0.21rem; position: absolute; top: 0rem; left: 0.45rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.16rem; line-height: 0.24rem; height: 0.21rem; width: 17.99rem; position: absolute; top: 0.32rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.16rem; line-height: 0.21rem; width: 17.1rem; position: absolute; top: 0rem; left: 0.45rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -867,16 +873,16 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996{font-size: 0.2rem; line-height: 0.25rem; height: 3.92rem; width: 17.99rem; position: absolute; top: 11.34rem; left: 0rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{}
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.textual { text-align: left; }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; font-size: 0.2rem; line-height: 0.3rem; height: 3.92rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;}
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph{font-size: 0.2rem; line-height: 0.3rem; width: 8.1rem; position: absolute; top: 0.45rem; left: 3.15rem;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.column { text-align: left; }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column{font-size: 0.2rem; line-height: 0.3rem; height: 3.92rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph{font-size: 0.2rem; line-height: 0.3rem; width: 8.1rem; position: absolute; top: 0.45rem; left: 3.15rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a { color: rgb(227, 149, 149); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a:active { color: rgb(255, 255, 255); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 { background-color: rgb(41, 35, 35); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d{font-size: 0.2rem; line-height: 0.25rem; height: 3.02rem; width: 17.99rem; position: absolute; top: 15.26rem; left: 0rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.textual { text-align: left; }
@@ -895,9 +901,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one{position: relative; display: block; width: 17.99rem; height: 0.84rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.2rem; line-height: 0.25rem; height: 0.84rem; width: 17.99rem; position: absolute; top: 18.28rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.16rem; line-height: 0.24rem; height: 0.21rem; width: 2.45rem; position: absolute; top: 0.32rem; left: 7.78rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.16rem; line-height: 0.21rem; position: absolute; top: 0rem; left: 0.45rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.16rem; line-height: 0.24rem; height: 0.21rem; width: 17.99rem; position: absolute; top: 0.32rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.16rem; line-height: 0.21rem; width: 17.1rem; position: absolute; top: 0rem; left: 0.45rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -906,8 +912,8 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w1799{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w1799{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3,
@@ -915,9 +921,11 @@ u.w1799{ display: block }
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3,
  #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph,
- #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column,
- #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph {
+ #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual,
+ #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph {
 display: none;
 }
 }
@@ -928,9 +936,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one{position: relative; display: block; width: 18rem; height: 0.79rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav{font-size: 0.15rem; line-height: 0.19rem; height: 0.79rem; width: 18rem; position: absolute; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.12rem; line-height: 0.18rem; height: 0.16rem; width: 1.85rem; position: absolute; top: 0.32rem; left: 8.08rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.12rem; line-height: 0.16rem; position: absolute; top: 0rem; left: 0.45rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading{font-size: 0.12rem; line-height: 0.18rem; height: 0.16rem; width: 18rem; position: absolute; top: 0.32rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline{font-size: 0.12rem; line-height: 0.16rem; width: 17.1rem; position: absolute; top: 0rem; left: 0.45rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:hover { color: rgb(139, 132, 132); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav#u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav a:active { color: rgb(255, 255, 255); }
@@ -970,16 +978,16 @@ display: none;
 #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67#u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996{font-size: 0.15rem; line-height: 0.19rem; height: 2.53rem; width: 18rem; position: absolute; top: 9.04rem; left: 0rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996:before{}
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.textual { text-align: left; }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual{opacity: 1; font-size: 0.15rem; line-height: 0.23rem; height: 2.53rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;}
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph{font-size: 0.15rem; line-height: 0.23rem; width: 8.1rem; position: absolute; top: 0.46rem; left: 3.15rem;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 >.group.column { text-align: left; }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column{font-size: 0.15rem; line-height: 0.23rem; height: 2.53rem; width: 14.4rem; position: absolute; top: 0rem; left: 1.8rem;}
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph#u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph{font-size: 0.15rem; line-height: 0.23rem; width: 8.1rem; position: absolute; top: 0.46rem; left: 3.15rem;}
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a { color: rgb(227, 149, 149); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a:hover { color: rgb(139, 132, 132); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 a:active { color: rgb(255, 255, 255); }
 #u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 { background-color: rgb(41, 35, 35); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph { color: rgb(242, 242, 242); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a { color: rgb(102, 97, 97); }
-#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.textual > .text.paragraph a:hover { color: rgb(139, 132, 132); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph { color: rgb(242, 242, 242); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph a { color: rgb(102, 97, 97); }
+#u-2985d1cb-9098-4e25-b06b-02f8e3df7996#u-2985d1cb-9098-4e25-b06b-02f8e3df7996 .group.column > .text.paragraph a:hover { color: rgb(139, 132, 132); }
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d{font-size: 0.15rem; line-height: 0.19rem; height: 2.3rem; width: 18rem; position: absolute; top: 11.559999999999999rem; left: 0rem;}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d#u-4a956236-3bad-46d5-afbc-0f5fe8171d3d:before{}
 #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d >.group.textual { text-align: left; }
@@ -998,9 +1006,9 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one{position: relative; display: block; width: 18rem; height: 0.79rem; top: 0rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate{font-size: 0.15rem; line-height: 0.19rem; height: 0.79rem; width: 18rem; position: absolute; top: 13.86rem; left: 0rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate:before{}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: left; }
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.12rem; line-height: 0.18rem; height: 0.16rem; width: 2.22rem; position: absolute; top: 0.32rem; left: 7.9rem;}
-#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.12rem; line-height: 0.16rem; position: absolute; top: 0rem; left: 0.45rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate >.group.heading { text-align: center; }
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading{font-size: 0.12rem; line-height: 0.18rem; height: 0.16rem; width: 18rem; position: absolute; top: 0.32rem; left: 0rem;}
+#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline{font-size: 0.12rem; line-height: 0.16rem; width: 17.1rem; position: absolute; top: 0rem; left: 0.45rem;}
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a { color: rgb(227, 149, 149); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:hover { color: rgb(141, 129, 129); }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate#u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate a:active { color: rgb(255, 255, 255); }
@@ -1009,8 +1017,8 @@ display: none;
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one#u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one { background-color: rgb(32, 21, 21); }
 .export-linebreaks, .export-linebreaks .aside .aside { white-space: nowrap }
 .translated-ltr .export-linebreaks, .export-linebreaks .aside { white-space: normal }
-u.w1800{ display: block }
-.translated-ltr u[class] { display: none }
+.translated-ltr wbr, wbr[class] { display: none }
+wbr.w1800{ display: block }
 #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3,
@@ -1018,12 +1026,14 @@ u.w1800{ display: block }
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2,
  #u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3,
  #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual,
- #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph,
- #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column,
- #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph {
+ #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual,
+ #u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column,
+ #u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph,
+ #u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-4a848e38-dc0f-426b-87eb-40cd2186387a"><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one"></div></section><article subject="panel" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_none stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall font_size_xsmall panel stack heading i first_panel last_panel w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav"><div kind="group" index="heading" class="group heading group heading" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline-a">etherpress2</a></h1></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i first_chapter w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text stack textual" itemid="39c313a9-2e92-40f3-9477-9e1965099a84" itemtype="text" diff_index="3" index="textual" kind="stack" score="5.75" missed="0.25" tag="article" id="u-39c313a9-2e92-40f3-9477-9e1965099a84"><div kind="group" index="textual" class="group textual group textual" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-headline"><a class="text-decoration" href="farmshare/index.html" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-headline-a">FarmShare</a></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph"><p><span class="first-letter">C</span>onsenSys released <a href="https://docs.google.com/document/d/1jntZtiw0VQQ6ZctVyWsCcg-ZGvv6MCSvlFIIPG5GDSg/edit?usp=sharing">a white <u class="w480"></u>paper about <u class="w481"></u>FarmShare</a>, a <u class="w480 w960"></u>decentralized CSA platform</p><p><span class="first-letter"><u class="w480 w481 w960 w961 w1799 w1800"></u>A</span>griculture is one of the few <u class="w480"></u>industries, which are <u class="w481"></u>not <u class="w960"></u>affected <u class="w480"></u>significantly by the <u class="w961 w1799"></u>information <u class="w480 w481"></u>technology <u class="w960"></u>proliferation. <u class="w480 w1800"></u>Community-supported <u class="w481"></u>agriculture <u class="w480"></u>(CSA) is an <u class="w960 w961 w1799"></u>alternative economic <u class="w480"></u>model <u class="w481"></u>for the distribution and <u class="w480 w960"></u>production of locally <u class="w1800"></u>grown <u class="w480 w481"></u>produce, as <u class="w961 w1799"></u>it promotes a new <u class="w480 w960"></u>form of <u class="w481"></u>collaborative labor <u class="w480"></u>ownership, local oriented <u class="w480 w481 w960"></u>economics and <u class="w961 w1799"></u>communal <u class="w1800"></u>land <u class="w480"></u>ownership that <u class="w481"></u>relies on the <u class="w960"></u>direct <u class="w480"></u>engagement of farmer and <u class="w480 w481"></u>consumer. <u class="w961 w1799"></u>Today, CSA has <u class="w960"></u>grown <u class="w480"></u>in various sizes <u class="w481"></u>and <u class="w1800"></u>numbers and <u class="w480"></u>many organizations <u class="w960"></u>started <u class="w481"></u>using <u class="w480 w961 w1799"></u>in their marketing strategy.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i w-paragraph w-text w-separator w-decoration w-leader w-long_paragraph w-long_text stack textual" itemid="1f95c07c-d135-47c0-a756-2ad2e2fa0c67" itemtype="text" diff_index="3" index="textual" kind="stack" score="2.625" missed="0.375" tag="article" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67"><div kind="group" index="column" class="group column group column" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph"><p><span class="first-letter">I</span>n ConsenSys&#x2019; Farmshare white paper, you get to know the potential of a community <u class="w1799"></u>supported agriculture evolution <u class="w1800"></u>model that takes benefits of a blockchain potential for a <u class="w1799"></u>token-based equity shares, automated governance and <u class="w1800"></u>distributed consensus to foster <u class="w1799"></u>better community engagement while removing few financial risks and managerial <u class="w1800"></u>burdens <u class="w1799"></u>from the farmers who involve in CSA. Basically, Farmshare allows new property forms, <u class="w1799"></u>community operation, <u class="w1800"></u>self sufficient economies and community operation to facilitate <u class="w1799"></u>collaboration between the shareholders and farmers, <u class="w1800"></u>which has proved tough for CSA <u class="w1799"></u>organization depending on the traditional model of communication and planning.</p></div></div><div kind="group" index="textual" class="group textual group textual" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph"><p><span class="first-letter">I</span>n ConsenSys&#x2019; Farmshare white <u class="w480"></u>paper, you get to <u class="w481"></u>know the <u class="w480 w960"></u>potential of a community <u class="w480 w961"></u>supported <u class="w481"></u>agriculture evolution <u class="w480 w960"></u>model that takes benefits of a <u class="w480 w481"></u>blockchain potential for a <u class="w960 w961"></u>token-<u class="w480"></u>based equity <u class="w481"></u>shares, automated <u class="w480"></u>governance and <u class="w960"></u>distributed <u class="w480 w481"></u>consensus to foster <u class="w961"></u>better <u class="w480"></u>community <u class="w960"></u>engagement <u class="w481"></u>while <u class="w480"></u>removing few financial risks and <u class="w480 w960"></u>managerial <u class="w481"></u>burdens <u class="w961"></u>from the <u class="w480"></u>farmers who involve in CSA. <u class="w480 w481 w960"></u>Basically, Farmshare allows new <u class="w480"></u>property forms, <u class="w481 w961"></u>community <u class="w480 w960"></u>operation, self sufficient <u class="w480"></u>economies <u class="w481"></u>and community <u class="w480 w960"></u>operation to facilitate <u class="w480 w481 w961"></u>collaboration between the <u class="w480"></u>shareholders <u class="w960"></u>and <u class="w481"></u>farmers, which <u class="w480"></u>has proved tough for CSA <u class="w480 w481 w961"></u>organization <u class="w960"></u>depending on the <u class="w480"></u>traditional model of <u class="w480 w481"></u>communication and <u class="w960"></u>planning.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i w-paragraph w-text w-separator w-decoration w-leader w-long_paragraph w-long_text stack textual" itemid="2985d1cb-9098-4e25-b06b-02f8e3df7996" itemtype="text" diff_index="3" index="textual" kind="stack" score="2.625" missed="0.375" tag="article" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996"><div kind="group" index="column" class="group column group column" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph"><p><span class="first-letter">E</span>thereum based Farmshare tokens are the currency of this <u class="w960"></u>CSA model and help to buy the <u class="w961"></u>crops provided by the CSA. <u class="w960"></u>Farmers can use an estimate of their crops they produce <u class="w960"></u>before <u class="w961"></u>the token sale and shareholders can purchase the <u class="w960"></u>shares to personalize their weekly <u class="w961"></u>deliveries through <u class="w960"></u>exchanging certain CSA products shares. Exchanges offer <u class="w960"></u>the necessary <u class="w961"></u>flexibility for shareholders to exit and enter into <u class="w960"></u>the Farmshare community mid-harvest, <u class="w961"></u>which is the peer-to-<u class="w960"></u>peer network, so its value is directly related to the active users <u class="w960"></u>counts. It <u class="w961"></u>also incorporates the loT technology in form of soil <u class="w960"></u>quality sensors, automated irrigation <u class="w961"></u>systems, and weather <u class="w960"></u>monitoring devices offering the feedback mechanism for the <u class="w960 w961"></u>community members as well as farmers to make excellent <u class="w960"></u>decisions about crop production <u class="w961"></u>and land management.</p></div></div><div kind="group" index="textual" class="group textual group textual" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph"><p><span class="first-letter">E</span>thereum based Farmshare <u class="w480"></u>tokens are the <u class="w481"></u>currency of this <u class="w480"></u>CSA model and help to buy the <u class="w480 w481 w1799"></u>crops provided by the CSA. <u class="w480 w1800"></u>Farmers can use an <u class="w481"></u>estimate of <u class="w480"></u>their crops they produce before <u class="w480 w1799"></u>the <u class="w481"></u>token sale and shareholders <u class="w480"></u>can purchase the <u class="w481"></u>shares <u class="w1800"></u>to <u class="w480"></u>personalize their weekly <u class="w1799"></u>deliveries <u class="w480 w481"></u>through exchanging certain CSA <u class="w480"></u>products shares. <u class="w481"></u>Exchanges offer <u class="w480"></u>the necessary <u class="w1799 w1800"></u>flexibility for <u class="w480 w481"></u>shareholders to exit and enter into <u class="w480"></u>the Farmshare <u class="w481"></u>community mid-<u class="w480"></u>harvest, <u class="w1799"></u>which is the peer-to-peer <u class="w480 w481"></u>network, <u class="w1800"></u>so its value is directly <u class="w480"></u>related to the active <u class="w481"></u>users counts. <u class="w480 w1799"></u>It also incorporates the loT <u class="w480 w481"></u>technology in form of soil quality <u class="w480 w1800"></u>sensors, <u class="w481"></u>automated irrigation <u class="w480 w1799"></u>systems, and weather <u class="w481"></u>monitoring <u class="w480"></u>devices offering the feedback <u class="w480 w481"></u>mechanism for the <u class="w1799 w1800"></u>community <u class="w480"></u>members as well <u class="w481"></u>as farmers to <u class="w480"></u>make excellent decisions about <u class="w480"></u>crop <u class="w481 w1799"></u>production and land <u class="w480"></u>management.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i last_chapter w-paragraph w-text w-separator w-decoration w-leader w-long_paragraph w-long_text stack textual" itemid="4a956236-3bad-46d5-afbc-0f5fe8171d3d" itemtype="text" diff_index="3" index="textual" kind="stack" score="2.625" missed="0.375" tag="article" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d"><div kind="group" index="textual" class="group textual group textual" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph"><p><span class="first-letter">F</span>armshare relies on radical <u class="w480"></u>models of the <u class="w481"></u>economics and <u class="w480 w960"></u>community organization, hence <u class="w480 w481 w961 w1799"></u>demanding an intuitive user <u class="w480 w960 w1800"></u>interface to make <u class="w481"></u>more abstract <u class="w480"></u>concepts easy to understand <u class="w960 w961 w1799"></u>and <u class="w480 w481"></u>tangible. As the proof-of-concept, <u class="w480"></u>Farmshare starts <u class="w481 w1800"></u>with <u class="w960"></u>the small <u class="w480"></u>aquaponic systems <u class="w961 w1799"></u>with the built <u class="w480"></u>in <u class="w481"></u>sensor as well <u class="w960"></u>as automation <u class="w480"></u>to make caring for <u class="w481"></u>fish and plants <u class="w480"></u>easy.</p><p><a href="https://medium.com/@ConsenSys/farmshare-at-callicoon-ny-art-walk-this-saturday-12-8pm-3904b426d420"><u class="w480 w481 w960 w961 w1799 w1800"></u>FarmShare will be at Callicoon Art <u class="w480"></u>Walk</a> tomorrow, <u class="w481"></u>Saturday <u class="w960"></u>Oct <u class="w480"></u>10th, from 12&#x2013;8pm the <u class="w961 w1799"></u>Weigh <u class="w480 w481"></u>Station and Silos, 12 Main <u class="w960 w1800"></u>St, <u class="w480"></u>Callicoon, NY 12723</p></div></div></article><article subject="panel" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_none stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall font_size_xsmall panel stack heading i first_panel last_panel w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline-a">etherpress2 feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one"></div></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-4a848e38-dc0f-426b-87eb-40cd2186387a"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-mobile-l-one-3-l-one"></div></section><article subject="panel" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_none stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall font_size_xsmall panel stack heading i first_panel last_panel w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav"><div kind="group" index="heading" class="group heading group heading" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-nav-g-heading-t-headline-a">etherpress2</a></h1></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i first_chapter w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text stack textual" itemid="39c313a9-2e92-40f3-9477-9e1965099a84" itemtype="text" diff_index="3" index="textual" kind="stack" score="5.75" missed="0.25" tag="article" id="u-39c313a9-2e92-40f3-9477-9e1965099a84"><div kind="group" index="textual" class="group textual group textual" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-headline"><span class="text-decoration" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-headline-span">FarmShare</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-39c313a9-2e92-40f3-9477-9e1965099a84-g-textual-t-paragraph"><p><span class="first-letter">C</span>onsenSys released <a href="https://docs.google.com/document/d/1jntZtiw0VQQ6ZctVyWsCcg-ZGvv6MCSvlFIIPG5GDSg/edit?usp=sharing">a white <wbr class="w480"></wbr>paper about <wbr class="w481"></wbr>FarmShare</a>, a <wbr class="w480 w960"></wbr>decentralized CSA platform</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>A</span>griculture is one of the few <wbr class="w480"></wbr>industries, which are <wbr class="w481"></wbr>not <wbr class="w960"></wbr>affected <wbr class="w480"></wbr>significantly by the <wbr class="w961 w1799"></wbr>information <wbr class="w480 w481"></wbr>technology <wbr class="w960"></wbr>proliferation. <wbr class="w480 w1800"></wbr>Community-supported <wbr class="w481"></wbr>agriculture <wbr class="w480"></wbr>(CSA) is an <wbr class="w960 w961 w1799"></wbr>alternative economic <wbr class="w480"></wbr>model <wbr class="w481"></wbr>for the distribution and <wbr class="w480 w960"></wbr>production of locally <wbr class="w1800"></wbr>grown <wbr class="w480 w481"></wbr>produce, as <wbr class="w961 w1799"></wbr>it promotes a new <wbr class="w480 w960"></wbr>form of <wbr class="w481"></wbr>collaborative labor <wbr class="w480"></wbr>ownership, local oriented <wbr class="w480 w481 w960"></wbr>economics and <wbr class="w961 w1799"></wbr>communal <wbr class="w1800"></wbr>land <wbr class="w480"></wbr>ownership that <wbr class="w481"></wbr>relies on the <wbr class="w960"></wbr>direct <wbr class="w480"></wbr>engagement of farmer and <wbr class="w480 w481"></wbr>consumer. <wbr class="w961 w1799"></wbr>Today, CSA has <wbr class="w960"></wbr>grown <wbr class="w480"></wbr>in various sizes <wbr class="w481"></wbr>and <wbr class="w1800"></wbr>numbers and <wbr class="w480"></wbr>many organizations <wbr class="w960"></wbr>started <wbr class="w481"></wbr>using <wbr class="w480 w961 w1799"></wbr>in their marketing strategy.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large flow_vertical font_size_article chapter stack column i w-paragraph w-text w-long_paragraph w-long_text stack column" itemid="1f95c07c-d135-47c0-a756-2ad2e2fa0c67" itemtype="text" diff_index="0" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67"><div kind="group" index="textual" class="group textual group textual" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-textual-t-paragraph"><p><span class="first-letter">I</span>n ConsenSys&#x2019; Farmshare white paper, you get to know the <wbr class="w960"></wbr>potential of a community <wbr class="w961"></wbr>supported agriculture evolution <wbr class="w960"></wbr>model that takes benefits of a blockchain potential for a <wbr class="w960 w961"></wbr>token-based equity shares, automated governance and <wbr class="w960"></wbr>distributed consensus to foster <wbr class="w961"></wbr>better community <wbr class="w960"></wbr>engagement while removing few financial risks and <wbr class="w960"></wbr>managerial burdens <wbr class="w961"></wbr>from the farmers who involve in CSA. <wbr class="w960"></wbr>Basically, Farmshare allows new property forms, <wbr class="w961"></wbr>community <wbr class="w960"></wbr>operation, self sufficient economies and community <wbr class="w960"></wbr>operation to facilitate <wbr class="w961"></wbr>collaboration between the shareholders <wbr class="w960"></wbr>and farmers, which has proved tough for CSA <wbr class="w961"></wbr>organization <wbr class="w960"></wbr>depending on the traditional model of communication and <wbr class="w960"></wbr>planning.</p></div></div><div kind="group" index="column" class="group column group column" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1f95c07c-d135-47c0-a756-2ad2e2fa0c67-g-column-t-paragraph"><p><span class="first-letter">I</span>n ConsenSys&#x2019; Farmshare white <wbr class="w480"></wbr>paper, you get to <wbr class="w481"></wbr>know the <wbr class="w480"></wbr>potential of a community <wbr class="w480 w1799"></wbr>supported <wbr class="w481"></wbr>agriculture evolution <wbr class="w480 w1800"></wbr>model that takes benefits of a <wbr class="w480 w481"></wbr>blockchain potential for a <wbr class="w1799"></wbr>token-<wbr class="w480"></wbr>based equity <wbr class="w481"></wbr>shares, automated <wbr class="w480"></wbr>governance and <wbr class="w1800"></wbr>distributed <wbr class="w480 w481"></wbr>consensus to foster <wbr class="w1799"></wbr>better <wbr class="w480"></wbr>community engagement <wbr class="w481"></wbr>while <wbr class="w480"></wbr>removing few financial risks and <wbr class="w480"></wbr>managerial <wbr class="w481 w1800"></wbr>burdens <wbr class="w1799"></wbr>from the <wbr class="w480"></wbr>farmers who involve in CSA. <wbr class="w480 w481"></wbr>Basically, Farmshare allows new <wbr class="w480"></wbr>property forms, <wbr class="w481 w1799"></wbr>community <wbr class="w480"></wbr>operation, <wbr class="w1800"></wbr>self sufficient <wbr class="w480"></wbr>economies <wbr class="w481"></wbr>and community <wbr class="w480"></wbr>operation to facilitate <wbr class="w480 w481 w1799"></wbr>collaboration between the <wbr class="w480"></wbr>shareholders and <wbr class="w481"></wbr>farmers, <wbr class="w1800"></wbr>which <wbr class="w480"></wbr>has proved tough for CSA <wbr class="w480 w481 w1799"></wbr>organization depending on the <wbr class="w480"></wbr>traditional model of <wbr class="w480 w481"></wbr>communication and planning.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large font_size_article chapter stack textual i w-paragraph w-text w-separator w-decoration w-leader w-long_paragraph w-long_text stack textual" itemid="2985d1cb-9098-4e25-b06b-02f8e3df7996" itemtype="text" diff_index="3" index="textual" kind="stack" score="2.625" missed="0.375" tag="article" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996"><div kind="group" index="column" class="group column group column" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-column-t-paragraph"><p><span class="first-letter">E</span>thereum based Farmshare tokens are the currency of this <wbr class="w960"></wbr>CSA model and help to buy the <wbr class="w961 w1799"></wbr>crops provided by the CSA. <wbr class="w960 w1800"></wbr>Farmers can use an estimate of their crops they produce <wbr class="w960"></wbr>before <wbr class="w961 w1799"></wbr>the token sale and shareholders can purchase the <wbr class="w960"></wbr>shares <wbr class="w1800"></wbr>to personalize their weekly <wbr class="w961 w1799"></wbr>deliveries through <wbr class="w960"></wbr>exchanging certain CSA products shares. Exchanges offer <wbr class="w960"></wbr>the necessary <wbr class="w961 w1799 w1800"></wbr>flexibility for shareholders to exit and enter into <wbr class="w960"></wbr>the Farmshare community mid-harvest, <wbr class="w961 w1799"></wbr>which is the peer-to-<wbr class="w960"></wbr>peer network, <wbr class="w1800"></wbr>so its value is directly related to the active users <wbr class="w960"></wbr>counts. <wbr class="w1799"></wbr>It <wbr class="w961"></wbr>also incorporates the loT technology in form of soil <wbr class="w960"></wbr>quality <wbr class="w1800"></wbr>sensors, automated irrigation <wbr class="w961 w1799"></wbr>systems, and weather <wbr class="w960"></wbr>monitoring devices offering the feedback mechanism for the <wbr class="w960 w961 w1799 w1800"></wbr>community members as well as farmers to make excellent <wbr class="w960"></wbr>decisions about crop <wbr class="w1799"></wbr>production <wbr class="w961"></wbr>and land management.</p></div></div><div kind="group" index="textual" class="group textual group textual" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2985d1cb-9098-4e25-b06b-02f8e3df7996-g-textual-t-paragraph"><p><span class="first-letter">E</span>thereum based Farmshare <wbr class="w480"></wbr>tokens are the currency <wbr class="w481"></wbr>of this <wbr class="w480"></wbr>CSA model and help to buy the <wbr class="w480"></wbr>crops <wbr class="w481"></wbr>provided by the CSA. <wbr class="w480"></wbr>Farmers can use an estimate <wbr class="w481"></wbr>of <wbr class="w480"></wbr>their crops they produce before <wbr class="w480"></wbr>the token sale <wbr class="w481"></wbr>and shareholders <wbr class="w480"></wbr>can purchase the shares to <wbr class="w480 w481"></wbr>personalize their weekly deliveries <wbr class="w480"></wbr>through <wbr class="w481"></wbr>exchanging certain CSA <wbr class="w480"></wbr>products shares. <wbr class="w481"></wbr>Exchanges offer <wbr class="w480"></wbr>the necessary flexibility for <wbr class="w480 w481"></wbr>shareholders to exit and enter into <wbr class="w480"></wbr>the Farmshare <wbr class="w481"></wbr>community mid-<wbr class="w480"></wbr>harvest, which is the peer-to-peer <wbr class="w480 w481"></wbr>network, so its value is directly <wbr class="w480"></wbr>related to the active <wbr class="w481"></wbr>users counts. <wbr class="w480"></wbr>It also incorporates the loT <wbr class="w480 w481"></wbr>technology in form of soil quality <wbr class="w480"></wbr>sensors, <wbr class="w481"></wbr>automated irrigation <wbr class="w480"></wbr>systems, and weather <wbr class="w481"></wbr>monitoring <wbr class="w480"></wbr>devices offering the feedback <wbr class="w480 w481"></wbr>mechanism for the community <wbr class="w480"></wbr>members as well <wbr class="w481"></wbr>as farmers to <wbr class="w480"></wbr>make excellent decisions about <wbr class="w480"></wbr>crop <wbr class="w481"></wbr>production and land <wbr class="w480"></wbr>management.</p></div></div></article><article subject="chapter" class="first export-linebreaks not_decorated color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_medium stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_xsmall group_h_outset_none group_h_inset_large flow_vertical font_size_article chapter stack column i last_chapter w-paragraph w-text w-long_paragraph w-long_text stack column" itemid="4a956236-3bad-46d5-afbc-0f5fe8171d3d" itemtype="text" diff_index="0" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d"><div kind="group" index="textual" class="group textual group textual" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-textual-t-paragraph"><p><span class="first-letter">F</span>armshare relies on radical models of the economics and <wbr class="w960"></wbr>community organization, hence <wbr class="w961 w1799"></wbr>demanding an intuitive user <wbr class="w960 w1800"></wbr>interface to make more abstract concepts easy to understand <wbr class="w960 w961 w1799"></wbr>and tangible. As the proof-of-concept, Farmshare starts <wbr class="w1800"></wbr>with <wbr class="w960"></wbr>the small aquaponic systems <wbr class="w961 w1799"></wbr>with the built in sensor as well <wbr class="w960"></wbr>as automation to make caring for fish and plants easy.</p><p><a href="https://medium.com/@ConsenSys/farmshare-at-callicoon-ny-art-walk-this-saturday-12-8pm-3904b426d420"><wbr class="w960 w961 w1799 w1800"></wbr>FarmShare will be at Callicoon Art Walk</a> tomorrow, Saturday <wbr class="w960"></wbr>Oct 10th, from 12&#x2013;8pm the <wbr class="w961 w1799"></wbr>Weigh Station and Silos, 12 Main <wbr class="w960 w1800"></wbr>St, Callicoon, NY 12723</p></div></div><div kind="group" index="column" class="group column group column" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-4a956236-3bad-46d5-afbc-0f5fe8171d3d-g-column-t-paragraph"><p><span class="first-letter">F</span>armshare relies on radical <wbr class="w480"></wbr>models of the <wbr class="w481"></wbr>economics and <wbr class="w480"></wbr>community organization, hence <wbr class="w480 w481"></wbr>demanding an intuitive user <wbr class="w480"></wbr>interface to make <wbr class="w481"></wbr>more abstract <wbr class="w480"></wbr>concepts easy to understand and <wbr class="w480 w481"></wbr>tangible. As the proof-of-concept, <wbr class="w480"></wbr>Farmshare starts <wbr class="w481"></wbr>with the small <wbr class="w480"></wbr>aquaponic systems with the built <wbr class="w480"></wbr>in <wbr class="w481"></wbr>sensor as well as automation <wbr class="w480"></wbr>to make caring for <wbr class="w481"></wbr>fish and plants <wbr class="w480"></wbr>easy.</p><p><a href="https://medium.com/@ConsenSys/farmshare-at-callicoon-ny-art-walk-this-saturday-12-8pm-3904b426d420"><wbr class="w480 w481"></wbr>FarmShare will be at Callicoon Art <wbr class="w480"></wbr>Walk</a> tomorrow, <wbr class="w481"></wbr>Saturday Oct <wbr class="w480"></wbr>10th, from 12&#x2013;8pm the Weigh <wbr class="w480 w481"></wbr>Station and Silos, 12 Main St, <wbr class="w480"></wbr>Callicoon, NY 12723</p></div></div></article><article subject="panel" class="first export-linebreaks not_decorated flow_vertical color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_none stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall font_size_xsmall panel stack heading i first_panel last_panel w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-alternate-g-heading-t-headline-a">etherpress2 feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout header layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-desktop-l-one-3-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i first_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w-headline w-title w-paragraph w-text w-separator w-decoration w-leader w-short_headline w-short_title w-long_paragraph w-long_text layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" class="colors-use-same-as-previous colors-use-local layout one i first_layout article layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w-headline w-title w-separator w-decoration w-leader w-trailer w-icon w-short_headline w-short_title layout one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" class="colors-use-local layout one i first_layout last_layout footer layout one" diff_index="0" index="one" id="u-4a848e38-dc0f-426b-87eb-40cd2186387a-cinema-l-one-3-l-one"></div></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1425,19 +1435,22 @@ module.exports = function() {
 
 
 },{}],5:[function(require,module,exports){
-var cache, fade, highlighting;
+var cache, fade, frames, hiding, highlighting, showing;
 
-highlighting = null;
+highlighting = showing = hiding = null;
 
 cache = {};
 
+frames = {};
+
 fade = function(element, to, from) {
-  var Frame, animating, duration, started;
+  var Frame, duration, started;
   if (from == null) {
     from = parseFloat(element.style.opacity || 1);
   }
   started = new Date;
   duration = 300;
+  cancelAnimationFrame(frames[element.id]);
   Frame = function(time) {
     var passed;
     passed = Math.min(1, (new Date - started) / duration);
@@ -1446,11 +1459,11 @@ fade = function(element, to, from) {
       return requestAnimationFrame(Frame);
     }
   };
-  return animating = requestAnimationFrame(Frame);
+  return frames[element.id] = requestAnimationFrame(Frame);
 };
 
 document.body.addEventListener('mousemove', function(e) {
-  var clientX, clientY, colors, hiding, img, parent, ref, showing, target, value;
+  var clientX, clientY, colors, img, parent, ref, target, value;
   target = e.target;
   while (target) {
     if (target.tagName === 'A' && target.classList.contains('media')) {
@@ -1459,6 +1472,7 @@ document.body.addEventListener('mousemove', function(e) {
     target = target.parentNode;
   }
   if (highlighting && highlighting !== target) {
+    clearTimeout(showing);
     setTimeout(function() {
       if (hiding !== target) {
         hiding.style.backgroundImage = cache[hiding.id];
@@ -1467,11 +1481,12 @@ document.body.addEventListener('mousemove', function(e) {
     }, 300);
     hiding = highlighting;
     highlighting = null;
-    fade(hiding.getElementsByTagName('img')[0], 1, 0.8);
+    fade(hiding.getElementsByTagName('img')[0], 1);
   }
   if (target) {
     if ((ref = (img = target.getElementsByTagName('img')[0])) != null ? ref.complete : void 0) {
       if (target !== highlighting) {
+        clearTimeout(showing);
         showing = setTimeout(function() {
           if (highlighting === target) {
             return fade(img, 0.8);
@@ -1900,6 +1915,7 @@ if (file = (ref3 = (ref4 = location.search.match(/SPEC=([^&?]+)/)) != null ? ref
 module.exports = function(callback) {
   var protocol, query, url;
   query = document.querySelector('script[src*="clientside"]');
+  window.GSS_TIMEOUT = 60000;
   if (location.protocol === 'file:') {
     protocol = 'http:';
   } else {
@@ -2216,5 +2232,5 @@ module.exports = function(GSS) {
       document.documentElement.classList.remove('wf-loading')
       document.documentElement.classList.add('wf-active')
     }
-  }, window.callPhantom && 700 || 100) // let phantom catch up
+  }, window.callPhantom && 1000 || 300) // let phantom catch up
 },timeout: 25000,classes: false});</script></body></html>
